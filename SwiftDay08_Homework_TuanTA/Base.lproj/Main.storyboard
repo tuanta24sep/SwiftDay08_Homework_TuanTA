@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftDay08_Homework_TuanTA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,198 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ABL-sz-qgx">
+                                <rect key="frame" x="30" y="40" width="265" height="173"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="MsT-Wn-Jm3">
+                                        <rect key="frame" x="5" y="10" width="255" height="118"/>
+                                        <animations/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dj1-1Y-Ooj">
+                                        <rect key="frame" x="5" y="133" width="255" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Select"/>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstItem="MsT-Wn-Jm3" firstAttribute="leading" secondItem="ABL-sz-qgx" secondAttribute="leading" constant="5" id="03H-E5-gdr"/>
+                                    <constraint firstItem="MsT-Wn-Jm3" firstAttribute="top" secondItem="ABL-sz-qgx" secondAttribute="top" constant="10" id="5dc-pB-TPJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="dj1-1Y-Ooj" secondAttribute="bottom" constant="10" id="Ba4-Za-637"/>
+                                    <constraint firstAttribute="trailing" secondItem="MsT-Wn-Jm3" secondAttribute="trailing" constant="5" id="GnR-tm-vLA"/>
+                                    <constraint firstItem="dj1-1Y-Ooj" firstAttribute="top" secondItem="MsT-Wn-Jm3" secondAttribute="bottom" constant="5" id="Zya-xb-3DI"/>
+                                    <constraint firstItem="dj1-1Y-Ooj" firstAttribute="leading" secondItem="ABL-sz-qgx" secondAttribute="leading" constant="5" id="q3g-8S-Jjh"/>
+                                    <constraint firstAttribute="trailing" secondItem="dj1-1Y-Ooj" secondAttribute="trailing" constant="5" id="yRZ-Xg-Ye6"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z9Q-9Z-pxV">
+                                <rect key="frame" x="305" y="40" width="265" height="173"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0L-wR-558">
+                                        <rect key="frame" x="5" y="133" width="255" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Select"/>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Image-2" translatesAutoresizingMaskIntoConstraints="NO" id="UQb-6k-tmP">
+                                        <rect key="frame" x="5" y="10" width="255" height="118"/>
+                                        <animations/>
+                                    </imageView>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="UQb-6k-tmP" secondAttribute="trailing" constant="5" id="HKQ-ni-ZJD"/>
+                                    <constraint firstItem="d0L-wR-558" firstAttribute="leading" secondItem="z9Q-9Z-pxV" secondAttribute="leading" constant="5" id="Wqm-rh-qYk"/>
+                                    <constraint firstAttribute="bottom" secondItem="d0L-wR-558" secondAttribute="bottom" constant="10" id="ZRg-yL-4Fm"/>
+                                    <constraint firstItem="d0L-wR-558" firstAttribute="top" secondItem="UQb-6k-tmP" secondAttribute="bottom" constant="5" id="biK-jU-UBd"/>
+                                    <constraint firstItem="UQb-6k-tmP" firstAttribute="leading" secondItem="z9Q-9Z-pxV" secondAttribute="leading" constant="5" id="mjJ-9L-O0D"/>
+                                    <constraint firstItem="UQb-6k-tmP" firstAttribute="top" secondItem="z9Q-9Z-pxV" secondAttribute="top" constant="10" id="uij-uJ-1va"/>
+                                    <constraint firstAttribute="trailing" secondItem="d0L-wR-558" secondAttribute="trailing" constant="5" id="y2R-bj-qm5"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yIW-Ta-yH8">
+                                <rect key="frame" x="30" y="223" width="265" height="174"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Image-3" translatesAutoresizingMaskIntoConstraints="NO" id="cYt-Wo-ngR">
+                                        <rect key="frame" x="5" y="10" width="255" height="119"/>
+                                        <animations/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugl-az-r6D">
+                                        <rect key="frame" x="5" y="134" width="255" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Select"/>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ugl-az-r6D" secondAttribute="bottom" constant="10" id="0DM-ze-9Ra"/>
+                                    <constraint firstItem="cYt-Wo-ngR" firstAttribute="leading" secondItem="yIW-Ta-yH8" secondAttribute="leading" constant="5" id="J9G-NL-0x5"/>
+                                    <constraint firstItem="ugl-az-r6D" firstAttribute="leading" secondItem="yIW-Ta-yH8" secondAttribute="leading" constant="5" id="O0V-MS-zDk"/>
+                                    <constraint firstItem="cYt-Wo-ngR" firstAttribute="top" secondItem="yIW-Ta-yH8" secondAttribute="top" constant="10" id="dlm-cU-wHk"/>
+                                    <constraint firstItem="ugl-az-r6D" firstAttribute="top" secondItem="cYt-Wo-ngR" secondAttribute="bottom" constant="5" id="h3K-ev-dic"/>
+                                    <constraint firstAttribute="trailing" secondItem="cYt-Wo-ngR" secondAttribute="trailing" constant="5" id="iNj-4I-1pr"/>
+                                    <constraint firstAttribute="trailing" secondItem="ugl-az-r6D" secondAttribute="trailing" constant="5" id="tf8-bl-tJX"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TD2-EX-afl">
+                                <rect key="frame" x="305" y="223" width="265" height="174"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Image-4" translatesAutoresizingMaskIntoConstraints="NO" id="4xV-mM-tgl">
+                                        <rect key="frame" x="5" y="10" width="255" height="119"/>
+                                        <animations/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Cp-nj-alO">
+                                        <rect key="frame" x="5" y="134" width="255" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Select"/>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="4xV-mM-tgl" secondAttribute="trailing" constant="5" id="1Td-Dg-uLQ"/>
+                                    <constraint firstItem="8Cp-nj-alO" firstAttribute="leading" secondItem="TD2-EX-afl" secondAttribute="leading" constant="5" id="4c5-ZQ-8Ox"/>
+                                    <constraint firstItem="4xV-mM-tgl" firstAttribute="leading" secondItem="TD2-EX-afl" secondAttribute="leading" constant="5" id="E7w-4n-vYC"/>
+                                    <constraint firstItem="8Cp-nj-alO" firstAttribute="top" secondItem="4xV-mM-tgl" secondAttribute="bottom" constant="5" id="Sko-Ds-GJP"/>
+                                    <constraint firstItem="4xV-mM-tgl" firstAttribute="top" secondItem="TD2-EX-afl" secondAttribute="top" constant="10" id="jc9-52-mVE"/>
+                                    <constraint firstAttribute="bottom" secondItem="8Cp-nj-alO" secondAttribute="bottom" constant="10" id="pci-rl-PtZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="8Cp-nj-alO" secondAttribute="trailing" constant="5" id="vZ7-9K-eIP"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TM2-cS-Vzo">
+                                <rect key="frame" x="30" y="407" width="265" height="173"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Image-2" translatesAutoresizingMaskIntoConstraints="NO" id="tPf-vB-OC4">
+                                        <rect key="frame" x="5" y="10" width="255" height="118"/>
+                                        <animations/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ib9-xq-ymo">
+                                        <rect key="frame" x="5" y="133" width="255" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Select"/>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstItem="Ib9-xq-ymo" firstAttribute="leading" secondItem="TM2-cS-Vzo" secondAttribute="leading" constant="5" id="6af-zv-jGn"/>
+                                    <constraint firstAttribute="trailing" secondItem="tPf-vB-OC4" secondAttribute="trailing" constant="5" id="J05-a3-Ge5"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ib9-xq-ymo" secondAttribute="bottom" constant="10" id="Rd0-vo-ggx"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ib9-xq-ymo" secondAttribute="trailing" constant="5" id="T6d-V0-sX4"/>
+                                    <constraint firstItem="tPf-vB-OC4" firstAttribute="top" secondItem="TM2-cS-Vzo" secondAttribute="top" constant="10" id="kI6-kR-Hg2"/>
+                                    <constraint firstItem="tPf-vB-OC4" firstAttribute="leading" secondItem="TM2-cS-Vzo" secondAttribute="leading" constant="5" id="p0J-dr-iEH"/>
+                                    <constraint firstItem="Ib9-xq-ymo" firstAttribute="top" secondItem="tPf-vB-OC4" secondAttribute="bottom" constant="5" id="vTr-8I-GuL"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WB8-r6-XoO">
+                                <rect key="frame" x="305" y="407" width="265" height="173"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="jIt-Ow-kMc">
+                                        <rect key="frame" x="5" y="10" width="255" height="118"/>
+                                        <animations/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bgg-zD-sAL">
+                                        <rect key="frame" x="5" y="133" width="255" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Select"/>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="jIt-Ow-kMc" secondAttribute="trailing" constant="5" id="1wV-Yr-vKj"/>
+                                    <constraint firstAttribute="trailing" secondItem="Bgg-zD-sAL" secondAttribute="trailing" constant="5" id="82I-nO-CAJ"/>
+                                    <constraint firstItem="jIt-Ow-kMc" firstAttribute="leading" secondItem="WB8-r6-XoO" secondAttribute="leading" constant="5" id="B8f-hN-A8H"/>
+                                    <constraint firstItem="jIt-Ow-kMc" firstAttribute="top" secondItem="WB8-r6-XoO" secondAttribute="top" constant="10" id="KBh-ml-TX9"/>
+                                    <constraint firstItem="Bgg-zD-sAL" firstAttribute="top" secondItem="jIt-Ow-kMc" secondAttribute="bottom" constant="5" id="Xr6-1E-fgg"/>
+                                    <constraint firstItem="Bgg-zD-sAL" firstAttribute="leading" secondItem="WB8-r6-XoO" secondAttribute="leading" constant="5" id="cBn-3u-aIR"/>
+                                    <constraint firstAttribute="bottom" secondItem="Bgg-zD-sAL" secondAttribute="bottom" constant="10" id="eE1-Nk-d3c"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yIW-Ta-yH8" firstAttribute="top" secondItem="ABL-sz-qgx" secondAttribute="bottom" constant="10" id="1BU-7Q-ZkL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WB8-r6-XoO" secondAttribute="trailing" constant="10" id="1Qt-1m-iYO"/>
+                            <constraint firstItem="TD2-EX-afl" firstAttribute="top" secondItem="z9Q-9Z-pxV" secondAttribute="bottom" constant="10" id="48v-gg-dFV"/>
+                            <constraint firstItem="yIW-Ta-yH8" firstAttribute="height" secondItem="TD2-EX-afl" secondAttribute="height" id="54N-nM-pvb"/>
+                            <constraint firstItem="TD2-EX-afl" firstAttribute="height" secondItem="WB8-r6-XoO" secondAttribute="height" id="6bm-bG-xPy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="z9Q-9Z-pxV" secondAttribute="trailing" constant="10" id="6x1-Cv-Dn2"/>
+                            <constraint firstItem="ABL-sz-qgx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="7tD-nk-6Zu"/>
+                            <constraint firstItem="yIW-Ta-yH8" firstAttribute="height" secondItem="TM2-cS-Vzo" secondAttribute="height" id="Ea0-g4-sm2"/>
+                            <constraint firstItem="TM2-cS-Vzo" firstAttribute="width" secondItem="WB8-r6-XoO" secondAttribute="width" id="Hv9-sl-5SM"/>
+                            <constraint firstItem="yIW-Ta-yH8" firstAttribute="width" secondItem="TM2-cS-Vzo" secondAttribute="width" id="IAg-sq-gHo"/>
+                            <constraint firstItem="TM2-cS-Vzo" firstAttribute="top" secondItem="yIW-Ta-yH8" secondAttribute="bottom" constant="10" id="IRI-zS-a9U"/>
+                            <constraint firstItem="z9Q-9Z-pxV" firstAttribute="leading" secondItem="ABL-sz-qgx" secondAttribute="trailing" constant="10" id="KPZ-pJ-iiB"/>
+                            <constraint firstItem="ABL-sz-qgx" firstAttribute="height" secondItem="yIW-Ta-yH8" secondAttribute="height" id="L6a-2m-PlT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TM2-cS-Vzo" secondAttribute="bottom" constant="20" id="NfK-dB-FjP"/>
+                            <constraint firstItem="z9Q-9Z-pxV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="T9p-7K-OMh"/>
+                            <constraint firstItem="TD2-EX-afl" firstAttribute="width" secondItem="WB8-r6-XoO" secondAttribute="width" id="TRB-27-zHh"/>
+                            <constraint firstItem="z9Q-9Z-pxV" firstAttribute="width" secondItem="TD2-EX-afl" secondAttribute="width" id="Um5-1j-qkN"/>
+                            <constraint firstItem="ABL-sz-qgx" firstAttribute="width" secondItem="z9Q-9Z-pxV" secondAttribute="width" id="aZi-9v-4IW"/>
+                            <constraint firstItem="z9Q-9Z-pxV" firstAttribute="height" secondItem="TD2-EX-afl" secondAttribute="height" id="baZ-CQ-UmO"/>
+                            <constraint firstItem="ABL-sz-qgx" firstAttribute="height" secondItem="z9Q-9Z-pxV" secondAttribute="height" id="c8r-WZ-6xG"/>
+                            <constraint firstItem="yIW-Ta-yH8" firstAttribute="width" secondItem="TD2-EX-afl" secondAttribute="width" id="cgy-hO-Rge"/>
+                            <constraint firstItem="TM2-cS-Vzo" firstAttribute="height" secondItem="WB8-r6-XoO" secondAttribute="height" id="e7o-8c-OqC"/>
+                            <constraint firstItem="TM2-cS-Vzo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="hP4-7G-jyq"/>
+                            <constraint firstItem="TD2-EX-afl" firstAttribute="leading" secondItem="yIW-Ta-yH8" secondAttribute="trailing" constant="10" id="jib-nx-9EM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TD2-EX-afl" secondAttribute="trailing" constant="10" id="l6s-57-v1E"/>
+                            <constraint firstItem="WB8-r6-XoO" firstAttribute="top" secondItem="TD2-EX-afl" secondAttribute="bottom" constant="10" id="nA7-Ot-kbj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WB8-r6-XoO" secondAttribute="bottom" constant="20" id="uN4-7S-nk1"/>
+                            <constraint firstItem="ABL-sz-qgx" firstAttribute="width" secondItem="yIW-Ta-yH8" secondAttribute="width" id="vTM-Ga-D1P"/>
+                            <constraint firstItem="ABL-sz-qgx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="vn7-bf-KAr"/>
+                            <constraint firstItem="yIW-Ta-yH8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="wUd-WY-SQN"/>
+                            <constraint firstItem="WB8-r6-XoO" firstAttribute="leading" secondItem="TM2-cS-Vzo" secondAttribute="trailing" constant="10" id="xI3-pj-jCl"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="349"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image-1" width="315" height="200"/>
+        <image name="Image-2" width="803" height="803"/>
+        <image name="Image-3" width="335" height="223"/>
+        <image name="Image-4" width="438" height="246"/>
+    </resources>
 </document>
